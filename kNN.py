@@ -41,7 +41,7 @@ class kNN(object):
             for j in range(colTrain):
                 dists[0,j]=self.cosDist(testSet[i],self.trainSet[j])
             
-            #对距离从大到小排序，并获取排序索引
+            #对距离从小到大排序，并获取排序索引
             sortedIndex=np.argsort(-dists)
             classDic={}
             print(sortedIndex)
